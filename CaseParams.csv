@@ -1,0 +1,11 @@
+!For subjects, Male = 1, Female = 2, Male15 = 3, Female15 = 4,10 year old = 5,5 year old = 6,1 year old = 7,3 month old = 8
+!For activities, Sleep = 1, sitting = 2, light exercise = 3, heavy exercise =4, Standard worker = 5, heavy worker = 6,Member of the public (full day) = 7
+!Rho is the mass density of the particle. Recommended value is 3.0 g/cm3
+!Shape factor relates the thermodynamic diameter to the aerodynamic diameter (larger values are less spherical). Typical values are between 1 and 2. Recommended value is 1.5
+!U is wind speed. Variation within realistic ranges doesn't make much difference. Recommended value is 1.0
+!P is atmospheric pressure in cm Hg. 1 atm = 76 cm Hg.
+!Chronic indicates whether intake is chronic or acute. If chronic, activities will be weighted by volume. If acute, they will be weighted by time.
+!ICRP130 indicates whether to redistribute the activity in ET1 and ET2 according to ICRP130 recommendations
+monodispursed,nose breather,subject,activity,rho,Shape Factor,U,P,Chronic,ICRP130,Comp File
+F,T,1,7,3,1.5,1,76,T,F,icrp130.csv
+F,T,8,7,3,1.5,1,76,T,F,icrp130.csv
